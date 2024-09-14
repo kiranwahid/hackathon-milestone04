@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Dynamic resume</title>
+    <!-- custome css file link -->
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main_container"> 
+        <h1 class="heading">milestone 4 editable dynamic resume</h1>  
+<form action="" id="formdata">
+
+    <fieldset>
+        <legend>career summary</legend>
+        <label required for="user_summary">objective:</label>
+        <textarea required type="text" id="user_summary" placeholder="enter address" cols="4" rows="5" ></textarea>
+    </fieldset>
+<fieldset>
+    <legend>personal information</legend>
+    <label  for="user_name">Name:</label>
+    <input required type="text" id="user_name" placeholder="enter name" >
+    <label required for="user_email">Email:</label>
+    <input required type="email" id="user_email" placeholder="enter email" >
+    <label required for="user_num">phone:</label>
+    <input required type="number" id="user_num" placeholder="enter number" maxlength="13" >
+    <label required for="user_cnic">CNIC:</label>
+    <input required type="number" id="user_cnic" placeholder="enter CNIC" maxlength="15">
+    <label required for="user_address">address:</label>
+    <textarea required type="text" id="user_address" placeholder="enter address" cols="4" rows="3" ></textarea>
+
+</fieldset>
+
+
+<fieldset>
+    <legend>education</legend>
+    <label for="user_edu">qulification:</label>
+    <textarea required name="" id="user_edu" placeholder="enter qulification" cols="4" rows="4"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>Professional Experience</legend>
+    <label for="user_exp">experience:</label>
+    <textarea required name="" id="user_exp" placeholder="enter work experience" cols="4" rows="4"></textarea>
+</fieldset>
+
+<fieldset>
+    <legend>core abilities</legend>
+    <label for="user_skill">skill:</label>
+    <textarea required name="" id="user_skill" placeholder="enter skill" cols="4" rows="4"></textarea>
+</fieldset>
+    <button type="submit" id="submit">generate your resume </button>
+
+</form>
+    </div>
+
+    <div id="resume_output" contenteditable="true">
+        <!-- <h1 class="heading"></h1>
+        <h3 class="info"></h3> -->
+    </div>
+
+
+    <!-- custome js file link -->
+     <script src="app.js"></script>
+</body>
+</html>
